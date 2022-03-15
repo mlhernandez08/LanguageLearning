@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.languagelearning.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/writingFragment"
+        android:name="com.example.languagelearning.WritingFragment"
+        android:label="WritingFragment"
+        tools:layout="@layout/fragment_writing"/>
+    <fragment
+        android:id="@+id/vocabFragment"
+        android:name="com.example.languagelearning.VocabFragment"
+        android:label="VocabFragment"
+        tools:layout="@layout/fragment_vocab"/>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.languagelearning.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="com.example.languagelearning.DictionaryFragment"
+        android:label="DictionaryFragment" />
+</navigation>
