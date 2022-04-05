@@ -19,7 +19,11 @@
         android:id="@+id/vocabFragment"
         android:name="com.example.languagelearning.VocabFragment"
         android:label="VocabFragment"
-        tools:layout="@layout/fragment_vocab"/>
+        tools:layout="@layout/fragment_vocab">
+        <action
+            android:id="@+id/vocab_to_quiz"
+            app:destination="@id/vocabQuizFragment" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.languagelearning.SettingsFragment"
@@ -28,5 +32,11 @@
     <fragment
         android:id="@+id/dictionaryFragment"
         android:name="com.example.languagelearning.DictionaryFragment"
-        android:label="DictionaryFragment" />
+        android:label="DictionaryFragment"
+        tools:layout="@layout/fragment_dictionary"/>
+    <fragment
+        android:id="@+id/vocabQuizFragment"
+        android:name="com.example.languagelearning.VocabQuizFragment"
+        android:label="VocabQuizFragment"
+        tools:layout="@layout/fragment_vocab_quiz"/>
 </navigation>
