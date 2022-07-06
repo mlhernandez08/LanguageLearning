@@ -1,10 +1,13 @@
 <resources>
-    <string name="app_name">LanguageLearning</string>
+    <string name="app_name">HangulGo!</string>
 
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
 
     <!-- Paste BOTH strings as required -->
     <string name="back4app_app_id">vRTS3v2apy5FyrScJ2lxke3VZnoPaIdQP9fe0DoE</string>
     <string name="back4app_client_key">2kwW862HBTmrjp6rIkoE8yRBCfQpRqIqWanHFgZq</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vocab_tutorial">For the vocabulary section, select the category to start a quiz. Choose the option that best fits the Korean word given </string>
 
 </resources>

@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResult
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
@@ -15,11 +17,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class VocabFragment : Fragment() {
 
-    //private var activity: MainActivity?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //activity = activity
 
     }
 
@@ -31,33 +31,31 @@ class VocabFragment : Fragment() {
 
         val btnLesson1 : Button = view.findViewById(R.id.btn_lesson1)
         btnLesson1.setOnClickListener{
-            Log.e(TAG, "lesson 1 button pressed");
-            val lessonTitle = "Lesson 1 test"
-            val bundle = Bundle()
-            bundle.putString("Lesson 1", lessonTitle)
-            val fragment = VocabQuizFragment()
-            fragment.arguments = bundle
-            Log.e(TAG, "bundle contents " + bundle.get("Lesson 1"))
+            levelSelect = 1
             Navigation.findNavController(view).navigate(R.id.vocab_to_quiz)
         }
         val btnLesson2 : Button = view.findViewById(R.id.btn_lesson2)
         btnLesson2.setOnClickListener{
-            Log.e(TAG, "lesson 2 button pressed");
+            levelSelect = 2
+            Navigation.findNavController(view).navigate(R.id.vocab_to_quiz)
         }
 
         val btnLesson3 : Button = view.findViewById(R.id.btn_lesson3)
         btnLesson3.setOnClickListener{
-            Log.e(TAG, "lesson 3 button pressed");
+            levelSelect = 3
+            Navigation.findNavController(view).navigate(R.id.vocab_to_quiz)
         }
 
         val btnLesson4 : Button = view.findViewById(R.id.btn_lesson4)
         btnLesson4.setOnClickListener{
-            Log.e(TAG, "lesson 4 button pressed");
+            levelSelect = 4
+            Navigation.findNavController(view).navigate(R.id.vocab_to_quiz)
         }
 
         val btnLesson5 : Button = view.findViewById(R.id.btn_lesson5)
         btnLesson5.setOnClickListener{
-            Log.e(TAG, "lesson 5 button pressed");
+            levelSelect = 5
+            Navigation.findNavController(view).navigate(R.id.vocab_to_quiz)
         }
         return view
     }
@@ -65,5 +63,7 @@ class VocabFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
-
+    companion object {
+        var levelSelect = 0
+    }
 }

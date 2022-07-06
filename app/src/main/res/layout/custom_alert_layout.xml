@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#009688">
+
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="#122313"
+                android:fontFamily="@font/fira_mono_medium"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Congratulations!"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="50dp"
+                android:padding="10dp" />
+
+
+            <ImageView
+                android:id="@+id/btn_Close"
+                android:textColor="#000036"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_close_24"
+                android:padding="5dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnDismiss"
+            android:textColor="#122313"
+            android:fontFamily="@font/fira_mono_medium"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Close"
+            android:backgroundTint="#009688"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

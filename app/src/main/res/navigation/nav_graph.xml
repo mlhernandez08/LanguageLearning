@@ -14,7 +14,11 @@
         android:id="@+id/writingFragment"
         android:name="com.example.languagelearning.WritingFragment"
         android:label="WritingFragment"
-        tools:layout="@layout/fragment_writing"/>
+        tools:layout="@layout/fragment_writing">
+        <action
+            android:id="@+id/writing_to_quiz"
+            app:destination="@id/writingQuizFragment" />
+    </fragment>
     <fragment
         android:id="@+id/vocabFragment"
         android:name="com.example.languagelearning.VocabFragment"
@@ -38,5 +42,18 @@
         android:id="@+id/vocabQuizFragment"
         android:name="com.example.languagelearning.VocabQuizFragment"
         android:label="VocabQuizFragment"
-        tools:layout="@layout/fragment_vocab_quiz"/>
+        tools:layout="@layout/fragment_vocab_quiz">
+        <action
+            android:id="@+id/quiz_to_vocab"
+            app:destination="@id/vocabFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writingQuizFragment"
+        android:name="com.example.languagelearning.WritingQuizFragment"
+        android:label="fragment_writing_quiz"
+        tools:layout="@layout/fragment_writing_quiz" >
+        <action
+            android:id="@+id/quiz_to_writing"
+            app:destination="@id/writingFragment" />
+    </fragment>
 </navigation>

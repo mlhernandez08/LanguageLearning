@@ -3,14 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.3915" />
         <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/activity_login.xml" value="0.39166666666666666" />
-        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/activity_main.xml" value="0.48686594202898553" />
+        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/activity_main.xml" value="0.2419047619047619" />
+        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/activity_splash_screen.xml" value="0.39166666666666666" />
+        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/custom_alert_layout.xml" value="0.39166666666666666" />
         <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_dictionary.xml" value="0.48686594202898553" />
         <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_home.xml" value="0.48686594202898553" />
         <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_settings.xml" value="0.48686594202898553" />
         <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_vocab.xml" value="0.25" />
         <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_vocab_quiz.xml" value="0.39166666666666666" />
-        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_writing.xml" value="0.48686594202898553" />
+        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_writing.xml" value="0.2419047619047619" />
+        <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/layout/fragment_writing_quiz.xml" value="0.39166666666666666" />
         <entry key="..\:/Users/08mlh/AndroidStudioProjects/LanguageLearning/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5541666666666667" />
       </map>
     </option>

@@ -1,70 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".25"
-            android:weightSum="1">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp">
 
             <Button
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="Lesson 1"
                 android:id="@+id/btn_lesson1"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent" />
+                android:textColor="#122313"
+                android:fontFamily="@font/fira_mono_medium"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Native Korean Numbers"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:layout_span="3"
+                android:backgroundTint="@color/button_background_color" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:weightSum="1"
-            android:layout_weight="0.25" >
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
 
             <Button
                 android:id="@+id/btn_lesson2"
+                android:textColor="#122313"
+                android:fontFamily="@font/fira_mono_medium"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:paddingLeft="10dp"
                 android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="@color/button_background_color"
                 android:layout_gravity="center"
-                android:text="Lesson 2" />
+                android:text="Sino-Korean Numbers" />
 
             <Button
                 android:id="@+id/btn_lesson3"
+                android:textColor="#122313"
+                android:fontFamily="@font/fira_mono_medium"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="@color/button_background_color"
                 android:layout_gravity="center"
-                android:text="Lesson 3"/>
+                android:text="Clothing"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:weightSum="1"
-            android:layout_weight="0.25" >
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <Button
                 android:id="@+id/btn_lesson4"
+                android:textColor="#122313"
+                android:fontFamily="@font/fira_mono_medium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="@color/button_background_color"
                 android:layout_gravity="center"
-                android:text="Lesson 4" />
+                android:text="Colors" />
 
             <Button
                 android:id="@+id/btn_lesson5"
+                android:textColor="#122313"
+                android:fontFamily="@font/fira_mono_medium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="@color/button_background_color"
                 android:layout_gravity="center"
-                android:text="Lesson 5" />
+                android:text="Places" />
 
         </TableRow>
 
     </TableLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>

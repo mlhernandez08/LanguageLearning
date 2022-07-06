@@ -1,13 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Writing  Coming Soon" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp">
+            <Button
+                android:id="@+id/writing_btn_lesson1"
+                android:textColor="#122313"
+                android:fontFamily="@font/fira_mono_medium"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Letters"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:layout_span="3"
+                android:backgroundTint="@color/button_background_color" />
+        </TableRow>
 
-</FrameLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/writing_btn_lesson2"
+            android:textColor="#122313"
+            android:fontFamily="@font/fira_mono_medium"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/button_background_color"
+            android:layout_gravity="center"
+            android:text="Numbers" />
+
+        <Button
+            android:id="@+id/writing_btn_lesson3"
+            android:textColor="#122313"
+            android:fontFamily="@font/fira_mono_medium"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/button_background_color"
+            android:layout_gravity="center"
+            android:text="Food"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/writing_btn_lesson4"
+            android:textColor="#122313"
+            android:fontFamily="@font/fira_mono_medium"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/button_background_color"
+            android:layout_gravity="center"
+            android:text="Clothes" />
+
+        <Button
+            android:id="@+id/writing_btn_lesson5"
+            android:textColor="#122313"
+            android:fontFamily="@font/fira_mono_medium"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/button_background_color"
+            android:layout_gravity="center"
+            android:text="Places" />
+
+    </TableRow>
+
+    </TableLayout>

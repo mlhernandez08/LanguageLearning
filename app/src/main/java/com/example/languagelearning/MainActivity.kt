@@ -1,7 +1,7 @@
 package com.example.languagelearning
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -15,5 +15,9 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         val navBottomView: BottomNavigationView = findViewById(R.id.bottomNavigation)
         navBottomView.setupWithNavController(navController)
+    }
+    override fun onBackPressed() {
+
+        // super.onBackPressed(); // Comment this super call to avoid calling finish() or fragmentmanager's backstack pop operation.
     }
 }

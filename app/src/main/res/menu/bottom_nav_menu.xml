@@ -17,8 +17,9 @@
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="Settings" />
 
-    <item android:id="@+id/dictionaryFragment"
+    <!--<item android:id="@+id/dictionaryFragment"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="Dictionary" />
+        -->
 
 </menu>
